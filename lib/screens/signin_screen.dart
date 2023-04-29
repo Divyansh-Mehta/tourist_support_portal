@@ -7,9 +7,10 @@ import "./reset_password_screen.dart";
 import "./signup_screen.dart";
 import "../utils/color_utils.dart";
 import "../utils/error_dialogue.dart";
+import "./tabs_screen.dart";
 
 class SignInScreen extends StatefulWidget {
-  const SignInScreen({Key? key}) : super(key: key);
+  // const SignInScreen({Key? key}) : super(key: key);
   static const routeName = "/sign-in-screen";
 
   @override
@@ -58,7 +59,7 @@ class _SignInScreenState extends State<SignInScreen> {
                           email: _emailTextController.text,
                           password: _passwordTextController.text)
                       .then((value) {
-                    Navigator.of(context).pushReplacementNamed(HomeScreen.routeName);
+                    Navigator.of(context).pushReplacementNamed(TabsScreen.routeName);
                   }).onError((error, stackTrace) {
                     String displayError;
                     if (error

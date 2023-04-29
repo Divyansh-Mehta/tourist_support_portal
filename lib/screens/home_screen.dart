@@ -4,7 +4,7 @@ import "package:flutter/material.dart";
 import "./signin_screen.dart";
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  // const HomeScreen({Key? key}) : super(key: key);
   static const routeName = "/home-screen";
 
   @override

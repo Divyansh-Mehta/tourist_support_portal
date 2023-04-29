@@ -8,6 +8,7 @@ import "./providers/places_provider.dart";
 import "./screens/signin_screen.dart";
 import "./screens/reset_password_screen.dart";
 import "./screens/signup_screen.dart";
+import "./screens/tabs_screen.dart";
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -34,6 +35,7 @@ class MyApp extends StatelessWidget {
         ),
         home: auth == null ? SignInScreen() : HomeScreen(),
         routes: {
+          TabsScreen.routeName: (_) => TabsScreen(),
           HomeScreen.routeName: (_) => HomeScreen(),
           ResetPasswordScreen.routeName: (_) => ResetPasswordScreen(),
           SignInScreen.routeName: (_) => SignInScreen(),

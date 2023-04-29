@@ -7,7 +7,7 @@ import "../utils/color_utils.dart";
 import "../utils/error_dialogue.dart";
 
 class ResetPasswordScreen extends StatefulWidget {
-  const ResetPasswordScreen({Key? key}) : super(key: key);
+  // const ResetPasswordScreen({Key? key}) : super(key: key);
   static const routeName = "/reset-password";
   @override
   _ResetPasswordState createState() => _ResetPasswordState();

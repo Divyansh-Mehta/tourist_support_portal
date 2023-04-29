@@ -7,7 +7,7 @@ import "../utils/color_utils.dart";
 import "../utils/error_dialogue.dart";
 
 class SignUpScreen extends StatefulWidget {
-  const SignUpScreen({Key? key}) : super(key: key);
+  // const SignUpScreen({Key? key}) : super(key: key);
   static const routeName = "/sign-up-screen";
   @override
   _SignUpScreenState createState() => _SignUpScreenState();
