@@ -6,13 +6,13 @@ A new age user freindly customized tourist support portal.
 
 This project is at its initial phase of a flutter application.
 
-##Problem Statement
+## Problem Statement
 
 To develop a mobile/web application that provides tourists with comprehensive destination information, including attractions, accommodations, transportation, and safety tips.
 
-##What Tripsyy do ?
+## What Tripsyy do ?
 
-It solves the challenges of existing tourist support portal. That is to - 
+Tripsyy solves the challenges of existing tourist support portals.
 
 1. Wide range of destinations, stays, restaurants, local attractions and adventures thing to do.
 2. Find not just travel destinations but also find travel mates
