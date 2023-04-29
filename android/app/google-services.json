@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "777253003918",
+    "project_id": "tourist-support-portal",
+    "storage_bucket": "tourist-support-portal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777253003918:android:b11793d6d39fdf94381fdf",
+        "android_client_info": {
+          "package_name": "com.example.tourist_support_portal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "777253003918-js5d6gq25nqbobqjkl8018vaj21qd985.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tourist_support_portal",
+            "certificate_hash": "5403aafa58530a73e311378f78acb4336041cf30"
+          }
+        },
+        {
+          "client_id": "777253003918-7gbaide540ka577c5gk95pganui8oo29.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpRsP8HaKdajNrm7pQ3Z8cBqvKn1yr15g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "777253003918-7gbaide540ka577c5gk95pganui8oo29.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
