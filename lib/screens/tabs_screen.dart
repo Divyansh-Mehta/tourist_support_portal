@@ -31,6 +31,7 @@ class _TabsScreenState extends State<TabsScreen> {
     super.initState();
     // _scrollController = ScrollController();
     // _scrollController.addListener(_scrollListener);
+    
     _selectedPageIndex = 0;
     _pages = [
       HomeScreen(),
@@ -105,7 +106,7 @@ class _TabsScreenState extends State<TabsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      extendBodyBehindAppBar: true,
+      // extendBodyBehindAppBar: true,
       drawer: AppDrawer(),
       appBar: AppBar(
         actions: [
