@@ -4,6 +4,7 @@ import "package:provider/provider.dart";
 import "./home_screen.dart";
 import "../utils/color_utils.dart";
 import "../widgets/app_drawer.dart";
+import "./coin_screen.dart";
 
 // ignore: use_key_in_widget_constructors
 class TabsScreen extends StatefulWidget {
@@ -31,7 +32,7 @@ class _TabsScreenState extends State<TabsScreen> {
     super.initState();
     // _scrollController = ScrollController();
     // _scrollController.addListener(_scrollListener);
-    
+
     _selectedPageIndex = 0;
     _pages = [
       HomeScreen(),
@@ -111,7 +112,11 @@ class _TabsScreenState extends State<TabsScreen> {
       appBar: AppBar(
         actions: [
           IconButton(
-              onPressed: () {}, icon: Icon(Icons.currency_exchange_rounded))
+            onPressed: () {
+              Navigator.of(context).pushNamed(CoinScreen.routeName);
+            },
+            icon: Icon(Icons.currency_exchange_rounded),
+          ),
         ],
         title: const Text("Tripsyy"),
         centerTitle: true,

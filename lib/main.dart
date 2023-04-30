@@ -3,7 +3,8 @@ import "package:firebase_auth/firebase_auth.dart";
 import "package:flutter/material.dart";
 import "package:provider/provider.dart";
 
-import "package:tourist_support_portal/screens/home_screen.dart";
+import "./screens/coin_screen.dart";
+import "./screens/home_screen.dart";
 import "./providers/places_provider.dart";
 import "./screens/signin_screen.dart";
 import "./screens/reset_password_screen.dart";
@@ -36,6 +37,7 @@ class MyApp extends StatelessWidget {
         ),
         home: auth == null ? SignInScreen() : TabsScreen(),
         routes: {
+          CoinScreen.routeName: (_) => CoinScreen(),
           ProfileScreen.routeName: (_) => ProfileScreen(),
           TabsScreen.routeName: (_) => TabsScreen(),
           HomeScreen.routeName: (_) => HomeScreen(),
