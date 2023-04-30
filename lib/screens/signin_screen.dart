@@ -59,7 +59,8 @@ class _SignInScreenState extends State<SignInScreen> {
                           email: _emailTextController.text,
                           password: _passwordTextController.text)
                       .then((value) {
-                    Navigator.of(context).pushReplacementNamed(TabsScreen.routeName);
+                    Navigator.of(context)
+                        .pushReplacementNamed(TabsScreen.routeName);
                   }).onError((error, stackTrace) {
                     String displayError;
                     if (error
@@ -116,7 +117,8 @@ class _SignInScreenState extends State<SignInScreen> {
           style: TextStyle(color: Colors.white70),
           textAlign: TextAlign.right,
         ),
-        onPressed: () => Navigator.of(context).pushNamed(ResetPasswordScreen.routeName),
+        onPressed: () =>
+            Navigator.of(context).pushNamed(ResetPasswordScreen.routeName),
       ),
     );
   }
