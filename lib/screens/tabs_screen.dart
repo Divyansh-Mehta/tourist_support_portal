@@ -3,6 +3,7 @@ import "package:provider/provider.dart";
 
 import "./home_screen.dart";
 import "../utils/color_utils.dart";
+import "../widgets/app_drawer.dart";
 
 // ignore: use_key_in_widget_constructors
 class TabsScreen extends StatefulWidget {
@@ -32,6 +33,10 @@ class _TabsScreenState extends State<TabsScreen> {
     // _scrollController.addListener(_scrollListener);
     _selectedPageIndex = 0;
     _pages = [
+      HomeScreen(),
+      HomeScreen(),
+      HomeScreen(),
+      HomeScreen(),
       HomeScreen(),
       // CodingEquipmentsScreen(),
       // GroupScreen(),
@@ -66,6 +71,7 @@ class _TabsScreenState extends State<TabsScreen> {
         backgroundColor: Colors.transparent,
         unselectedItemColor: Colors.white,
         selectedItemColor: Colors.white,
+        selectedFontSize: 15,
         iconSize: 35,
         elevation: 0,
         currentIndex: _selectedPageIndex,
@@ -76,20 +82,20 @@ class _TabsScreenState extends State<TabsScreen> {
               label: "Home",
               backgroundColor: Colors.white),
           BottomNavigationBarItem(
-              icon: Icon(Icons.home),
-              label: "Home",
+              icon: Icon(Icons.search),
+              label: "Treval",
               backgroundColor: Colors.white),
           BottomNavigationBarItem(
-              icon: Icon(Icons.home),
-              label: "Home",
+              icon: Icon(Icons.camera),
+              label: "TripShot",
               backgroundColor: Colors.white),
           BottomNavigationBarItem(
-              icon: Icon(Icons.home),
-              label: "Home",
+              icon: Icon(Icons.quiz),
+              label: "Discover",
               backgroundColor: Colors.white),
           BottomNavigationBarItem(
-              icon: Icon(Icons.home),
-              label: "Home",
+              icon: Icon(Icons.mic_external_on),
+              label: "Host",
               backgroundColor: Colors.white),
         ],
       ),
@@ -100,6 +106,7 @@ class _TabsScreenState extends State<TabsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       extendBodyBehindAppBar: true,
+      drawer: AppDrawer(),
       appBar: AppBar(
         actions: [
           IconButton(
@@ -107,10 +114,10 @@ class _TabsScreenState extends State<TabsScreen> {
         ],
         title: Text("Tripsy"),
         centerTitle: true,
-        leading: IconButton(
-          icon: Icon(Icons.menu),
-          onPressed: () {},
-        ),
+        // leading: IconButton(
+        //   icon: Icon(Icons.menu),
+        //   onPressed: () {},
+        // ),
         flexibleSpace: Container(
           decoration: BoxDecoration(
             gradient: LinearGradient(

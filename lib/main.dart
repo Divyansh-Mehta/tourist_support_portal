@@ -9,6 +9,7 @@ import "./screens/signin_screen.dart";
 import "./screens/reset_password_screen.dart";
 import "./screens/signup_screen.dart";
 import "./screens/tabs_screen.dart";
+import "./screens/profile_screen.dart";
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -33,8 +34,9 @@ class MyApp extends StatelessWidget {
           appBarTheme: const AppBarTheme(
           ),
         ),
-        home: auth == null ? SignInScreen() : HomeScreen(),
+        home: auth == null ? SignInScreen() : TabsScreen(),
         routes: {
+          ProfileScreen.routeName: (_) => ProfileScreen(),
           TabsScreen.routeName: (_) => TabsScreen(),
           HomeScreen.routeName: (_) => HomeScreen(),
           ResetPasswordScreen.routeName: (_) => ResetPasswordScreen(),
