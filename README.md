@@ -4,7 +4,13 @@ A new age user freindly customized tourist support portal.
 
 ## Getting Started
 
-This project is at its initial phase of a flutter application.
+This project is a flutter application wiht firebase as backend as a service.
+
+## To run the App follow the below steps: -
+
+1. Get the code on you local system.
+2. Run command flutter pub get (Make sure to have Flutter framework in your system).
+3. Run command "Flutter run" to build the app in debug mode (Make sure to have an andriod mobile connected).
 
 ## Problem Statement
 
