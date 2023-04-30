@@ -3,6 +3,7 @@ import "package:flutter/material.dart";
 
 import "../widgets/slider.dart";
 import "../widgets/services.dart";
+import "../widgets/explore.dart";
 
 class HomeScreen extends StatefulWidget {
   // const HomeScreen({Key? key}) : super(key: key);
@@ -18,7 +19,10 @@ class _HomeScreenState extends State<HomeScreen> {
     return Column(
       children: [
         SliderScreen(),
+        SizedBox(height: 10,),
         Services(),
+        SizedBox(height: 10,),
+        Explore(),
       ],
     );
   }

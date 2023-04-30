@@ -72,7 +72,7 @@ class _TabsScreenState extends State<TabsScreen> {
         backgroundColor: Colors.transparent,
         unselectedItemColor: Colors.white,
         selectedItemColor: Colors.white,
-        selectedFontSize: 15,
+        // selectedFontSize: 15,
         iconSize: 35,
         elevation: 0,
         currentIndex: _selectedPageIndex,
@@ -84,7 +84,7 @@ class _TabsScreenState extends State<TabsScreen> {
               backgroundColor: Colors.white),
           BottomNavigationBarItem(
               icon: Icon(Icons.search),
-              label: "Treval",
+              label: "Traveller",
               backgroundColor: Colors.white),
           BottomNavigationBarItem(
               icon: Icon(Icons.camera),
@@ -113,7 +113,7 @@ class _TabsScreenState extends State<TabsScreen> {
           IconButton(
               onPressed: () {}, icon: Icon(Icons.currency_exchange_rounded))
         ],
-        title: Text("Tripsy"),
+        title: const Text("Tripsyy"),
         centerTitle: true,
         // leading: IconButton(
         //   icon: Icon(Icons.menu),
