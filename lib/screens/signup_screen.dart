@@ -1,5 +1,6 @@
 import "package:firebase_auth/firebase_auth.dart";
 import "package:flutter/material.dart";
+import "package:tourist_support_portal/screens/tabs_screen.dart";
 
 import "../widgets/reusable_widget.dart";
 import "./home_screen.dart";
@@ -7,7 +8,7 @@ import "../utils/color_utils.dart";
 import "../utils/error_dialogue.dart";
 
 class SignUpScreen extends StatefulWidget {
-  const SignUpScreen({Key? key}) : super(key: key);
+  // const SignUpScreen({Key? key}) : super(key: key);
   static const routeName = "/sign-up-screen";
   @override
   _SignUpScreenState createState() => _SignUpScreenState();
@@ -74,7 +75,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           password: _passwordTextController.text)
                       .then((value) {
                     print("Created New Account");
-                    Navigator.of(context).pushReplacementNamed(HomeScreen.routeName);
+                    Navigator.of(context).pushReplacementNamed(TabsScreen.routeName);
                   }).onError((error, stackTrace) {
                     String displayError;
                     if (error

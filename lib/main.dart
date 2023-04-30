@@ -3,11 +3,14 @@ import "package:firebase_auth/firebase_auth.dart";
 import "package:flutter/material.dart";
 import "package:provider/provider.dart";
 
-import "package:tourist_support_portal/screens/home_screen.dart";
+import "./screens/coin_screen.dart";
+import "./screens/home_screen.dart";
 import "./providers/places_provider.dart";
 import "./screens/signin_screen.dart";
 import "./screens/reset_password_screen.dart";
 import "./screens/signup_screen.dart";
+import "./screens/tabs_screen.dart";
+import "./screens/profile_screen.dart";
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -32,8 +35,11 @@ class MyApp extends StatelessWidget {
           appBarTheme: const AppBarTheme(
           ),
         ),
-        home: auth == null ? SignInScreen() : HomeScreen(),
+        home: auth == null ? SignInScreen() : TabsScreen(),
         routes: {
+          CoinScreen.routeName: (_) => CoinScreen(),
+          ProfileScreen.routeName: (_) => ProfileScreen(),
+          TabsScreen.routeName: (_) => TabsScreen(),
           HomeScreen.routeName: (_) => HomeScreen(),
           ResetPasswordScreen.routeName: (_) => ResetPasswordScreen(),
           SignInScreen.routeName: (_) => SignInScreen(),
