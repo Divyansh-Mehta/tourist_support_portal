@@ -115,7 +115,9 @@ class _TabsScreenState extends State<TabsScreen> {
             onPressed: () {
               Navigator.of(context).pushNamed(CoinScreen.routeName);
             },
-            icon: Icon(Icons.currency_exchange_rounded),
+            icon: ImageIcon(
+              AssetImage("assets/icons/coin.png"),
+            ),
           ),
         ],
         title: const Text("Tripsyy"),

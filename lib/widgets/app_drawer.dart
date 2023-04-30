@@ -17,7 +17,10 @@ class AppDrawer extends StatelessWidget {
         children: <Widget>[
           ProfileHeader(),
           ListTile(
-            leading: Icon(Icons.person, color: hexStringToColor("CB2B93"),),
+            leading: Icon(
+              Icons.person,
+              color: hexStringToColor("CB2B93"),
+            ),
             title: const Text("Profile"),
             onTap: () {
               Navigator.of(context).pushNamed(ProfileScreen.routeName);
@@ -25,7 +28,8 @@ class AppDrawer extends StatelessWidget {
           ),
           Divider(),
           ListTile(
-            leading: Icon(Icons.list_alt_sharp, color: hexStringToColor("CB2B93")),
+            leading:
+                Icon(Icons.list_alt_sharp, color: hexStringToColor("CB2B93")),
             title: const Text("Wish List"),
             onTap: () {
               Navigator.of(context).pushReplacementNamed(HomeScreen.routeName);
@@ -33,7 +37,10 @@ class AppDrawer extends StatelessWidget {
           ),
           Divider(),
           ListTile(
-            leading: Icon(Icons.room_outlined, color: hexStringToColor("9546C4"),),
+            leading: Icon(
+              Icons.room_outlined,
+              color: hexStringToColor("9546C4"),
+            ),
             title: const Text("My Trips"),
             onTap: () {
               Navigator.of(context).pushReplacementNamed(HomeScreen.routeName);
@@ -41,7 +48,10 @@ class AppDrawer extends StatelessWidget {
           ),
           Divider(),
           ListTile(
-            leading: Icon(Icons.currency_exchange_rounded, color: hexStringToColor("9546C4"),),
+            leading: ImageIcon(
+              AssetImage("assets/icons/coin.png"),
+              color: hexStringToColor("9546C4"),
+            ),
             title: const Text("Rewards"),
             onTap: () {
               Navigator.of(context).pushReplacementNamed(HomeScreen.routeName);
@@ -49,7 +59,10 @@ class AppDrawer extends StatelessWidget {
           ),
           Divider(),
           ListTile(
-            leading: Icon(Icons.info_outline, color: hexStringToColor("5E61F4"),),
+            leading: Icon(
+              Icons.info_outline,
+              color: hexStringToColor("5E61F4"),
+            ),
             title: const Text("About"),
             onTap: () {
               Navigator.of(context).pushReplacementNamed(HomeScreen.routeName);
@@ -57,12 +70,16 @@ class AppDrawer extends StatelessWidget {
           ),
           Divider(),
           ListTile(
-            leading: Icon(Icons.logout, color: hexStringToColor("5E61F4"),),
+            leading: Icon(
+              Icons.logout,
+              color: hexStringToColor("5E61F4"),
+            ),
             title: const Text("Log Out"),
             onTap: () {
               FirebaseAuth.instance.signOut().then((value) {
                 print("Signed Out");
-                Navigator.of(context).pushReplacementNamed(SignInScreen.routeName);
+                Navigator.of(context)
+                    .pushReplacementNamed(SignInScreen.routeName);
               });
             },
           ),

@@ -15,7 +15,9 @@ class _ExploreState extends State<Explore> {
     return Column(
       children: [
         Container(
-          margin: EdgeInsets.only(left: 10),
+          margin: EdgeInsets.only(
+            left: 10,
+          ),
           child:
               Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
             Text(
@@ -23,7 +25,7 @@ class _ExploreState extends State<Explore> {
               style: TextStyle(fontFamily: "merriweather", fontSize: 15),
             ),
             TextButton(
-              onPressed: null,
+              onPressed: () {},
               child: const Text(
                 "See All >",
                 style: TextStyle(

@@ -75,6 +75,7 @@ flutter:
     - assets/images/uttrakhand.jpg
     - assets/images/rajasthan.jpg
     - assets/images/karnataka.jpg
+    - assets/icons/coin.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

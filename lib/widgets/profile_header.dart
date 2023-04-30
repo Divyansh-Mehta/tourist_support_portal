@@ -34,11 +34,11 @@ class _ProfileHeaderState extends State<ProfileHeader> {
             ),
           ),
           Text(
-            "Rapid Tech",
+            "Anushka Sharma",
             style: TextStyle(color: Colors.white, fontSize: 20),
           ),
           Text(
-            "info@rapidtech.dev",
+            "anushka01@gmail.com",
             style: TextStyle(
               color: Colors.grey[200],
               fontSize: 14,

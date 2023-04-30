@@ -17,7 +17,7 @@ class Place extends StatelessWidget {
           borderRadius: BorderRadius.circular(15),
         ),
         elevation: 4,
-        margin: const EdgeInsets.all(10),
+        margin: const EdgeInsets.only(top: 10, right: 10, left: 10, bottom: 10),
         child: Column(
             children: <Widget>[
               const SizedBox(

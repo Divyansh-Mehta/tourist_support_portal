@@ -14,7 +14,7 @@ class _CoinScreenState extends State<CoinScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Coins"),
+        title: const Text("Coins"),
         flexibleSpace: Container(
           decoration: BoxDecoration(
             gradient: LinearGradient(
@@ -31,8 +31,23 @@ class _CoinScreenState extends State<CoinScreen> {
       ),
       body: Column(
         children: [
-          Container(
-            child: null,
+          Card(
+            elevation: 3,
+            color: Colors.white10,
+            margin: EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 40),
+            child: Container(
+              width: double.infinity,
+              height: 150,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Text(
+                    "Earned Coins: 1000",
+                    style: TextStyle(fontFamily: "merriweather", fontSize: 20),
+                  ),
+                ],
+              ),
+            ),
           ),
           ElevatedButton(
             style: ElevatedButton.styleFrom(
@@ -52,7 +67,7 @@ class _CoinScreenState extends State<CoinScreen> {
                   ),
                   borderRadius: BorderRadius.circular(20)),
               child: Container(
-                width: 100,
+                width: 200,
                 height: 50,
                 alignment: Alignment.center,
                 child: const Text(
@@ -63,6 +78,9 @@ class _CoinScreenState extends State<CoinScreen> {
             ),
             onPressed: () {},
           ),
+          SizedBox(
+            height: 40,
+          ),
           ElevatedButton(
             style: ElevatedButton.styleFrom(
                 padding: EdgeInsets.zero,
@@ -81,7 +99,7 @@ class _CoinScreenState extends State<CoinScreen> {
                   ),
                   borderRadius: BorderRadius.circular(20)),
               child: Container(
-                width: 100,
+                width: 200,
                 height: 50,
                 alignment: Alignment.center,
                 child: const Text(
